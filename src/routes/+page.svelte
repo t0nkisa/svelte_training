@@ -1,10 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p class="text-red-500">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Link from '$lib/components/Link.svelte';
+</script>
 
-<div class="card">
-    <div class="card-body">This is a card</div>
-    <div class="card-actions">
-        <button class="btn">Hello</button>
-        <button class="btn">Bye</button>
-    </div>
+<div class="flex flex-col w-1/5 h-1/2 m-auto gap-4">
+	<Link href="/login" content="Login" />
+	<Link href="/register" content="Register" />
 </div>

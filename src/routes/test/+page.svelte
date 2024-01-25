@@ -1,1 +1,0 @@
-<h1>Test new route</h1>

@@ -1,13 +1,9 @@
 <script lang="ts">
-    import "../app.css";
-    import type { LayoutServerData } from './$types';
-    export let data: LayoutServerData;
-    console.log(data);
-    
+	import '../app.css';
 </script>
 
-<span>
-    {data.deploymentGitBranch}
-</span>
-
-<slot></slot>
+<div class="bg-gin-200 dark:bg-kimberly-950 p-6">
+	<main class="min-h-dvh w-full flex flex-col bg-gin dark:bg-kimberly-900 p-4">
+		<slot />
+	</main>
+</div>
