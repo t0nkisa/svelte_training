@@ -1,13 +1,15 @@
 <script lang="ts">
     import "../app.css";
-    import type { LayoutServerData } from './$types';
-    export let data: LayoutServerData;
-    console.log(data);
+    
     
 </script>
 
-<span>
-    {data.deploymentGitBranch}
-</span>
 
-<slot></slot>
+<main class="min-h-dvh flex flex-col">
+    <div class="flex-grow bg-primary">
+        <slot></slot>
+    </div>
+</main>
+
+
+
